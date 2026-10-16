@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="300" viewBox="0 0 1120 300" role="img" aria-labelledby="title desc">
+  <title id="title">VibrationSnap</title>
+  <desc id="desc">Offline vibration analysis. A synthetic waveform on a blue grid.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10203d"/><stop offset="1" stop-color="#172d51"/></linearGradient>
+    <linearGradient id="wave"><stop stop-color="#53d9da"/><stop offset="1" stop-color="#80aaff"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#b9d3ff" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="1120" height="300" rx="22" fill="url(#bg)"/>
+  <rect x="600" width="520" height="300" rx="22" fill="url(#grid)"/>
+  <circle cx="1030" cy="30" r="170" fill="#4387ff" opacity=".06"/>
+  <text x="62" y="79" fill="#87b7f9" font-family="Segoe UI,Arial,sans-serif" font-size="14" letter-spacing="3">OFFLINE ENGINEERING TOOLBOX</text>
+  <text x="58" y="150" fill="#f5f9ff" font-family="Segoe UI,Arial,sans-serif" font-size="55" font-weight="650">VibrationSnap</text>
+  <text x="62" y="190" fill="#b3c6e1" font-family="Segoe UI,Arial,sans-serif" font-size="20">From signal to insight.</text>
+  <rect x="62" y="224" width="106" height="29" rx="14" fill="#233e61"/>
+  <text x="115" y="244" text-anchor="middle" fill="#d6e6ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Windows x64</text>
+  <rect x="180" y="224" width="86" height="29" rx="14" fill="#233e61"/>
+  <text x="223" y="244" text-anchor="middle" fill="#d6e6ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Portable</text>
+  <path d="M610 154H655L665 143 675 169 685 133 695 178 705 111 715 195 725 140 735 165 745 152H767L777 130 787 180 797 87 807 226 817 68 827 237 837 105 847 197 857 128 867 174 877 146 887 158H907L917 137 927 175 937 107 947 204 957 125 967 182 977 143 987 160H1060" stroke="url(#wave)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1060" y="269" text-anchor="end" fill="#7895ba" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">IMPORT / ANALYZE / EXPORT</text>
+</svg>
