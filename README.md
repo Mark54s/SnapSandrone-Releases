@@ -19,9 +19,9 @@
 
 ## 下载与启动
 
-**当前版本：v0.0.1-beta.1 · Windows x64 · 便携测试版**
+**当前版本：v0.0.1-beta.2 · Windows x64 · 便携测试版**
 
-1. [下载 VibrationSnap Windows x64 ZIP](https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.1/VibrationSnap-v0.0.1-beta.1-windows-x64.zip)。
+1. [下载 VibrationSnap Windows x64 ZIP](https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.2/VibrationSnap-v0.0.1-beta.2-windows-x64.zip)。
 2. 完整解压到有写入权限的文件夹，不要直接在压缩包里运行。
 3. 进入 `VibrationSnap` 文件夹，双击 **`VibrationSnap.exe`**。
 
@@ -34,7 +34,7 @@ GitHub 自动生成的 **Source code (zip / tar.gz)** 只有本下载仓库的�
 | :--- | :--- | :--- |
 | TDMS / CSV / TXT 导入 | 时域、幅值谱、Welch PSD | 一卡一图、专注查看、拖动排序 |
 | 文件夹导入、分组与通道浏览 | STFT、包络谱、倒谱、倍频程 | 多卡批量参数与坐标范围 |
-| 裁剪、去均值、高/低通滤波 | 互谱、相干及统计质检 | 工作区保存、图片与数据导出 |
+| 裁剪、去均值、高/低通滤波 | 互谱、相干及统计质检 | 工作区保存、图片/数据导出、**Word 图片报告** |
 
 ### 第一次使用
 
@@ -66,7 +66,7 @@ MATLAB 原生绘图是可选后端，需要自行安装并授权 MATLAB，再在
 在 PowerShell 中运行（将路径换成你的 ZIP 路径）：
 
 ```powershell
-Get-FileHash -LiteralPath 'VibrationSnap-v0.0.1-beta.1-windows-x64.zip' -Algorithm SHA256
+Get-FileHash -LiteralPath 'VibrationSnap-v0.0.1-beta.2-windows-x64.zip' -Algorithm SHA256
 ```
 
 将结果与同一 Release 的 `SHA256SUMS.txt` 对比，应完全一致。
