@@ -19,9 +19,9 @@
 
 ## 下载与启动
 
-**当前版本：v0.0.1-beta.2 · Windows x64 · 便携测试版**
+**当前版本：v0.0.1-beta.3 · Windows x64 · 便携测试版**
 
-1. [下载 VibrationSnap Windows x64 ZIP](https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.2/VibrationSnap-v0.0.1-beta.2-windows-x64.zip)。
+1. [下载 VibrationSnap Windows x64 ZIP](https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.3/VibrationSnap-v0.0.1-beta.3-windows-x64.zip)。
 2. 完整解压到有写入权限的文件夹，不要直接在压缩包里运行。
 3. 进入 `VibrationSnap` 文件夹，双击 **`VibrationSnap.exe`**。
 
@@ -45,6 +45,13 @@ GitHub 自动生成的 **Source code (zip / tar.gz)** 只有本下载仓库的�
 - 工作区保存来源引用、参数和视图配置；重新打开后点击“应用并更新”生成图表。
 - 默认离线处理，不需要登录，也不上传实验数据。
 
+## 本版更新
+
+- 提供 **大肥鱼（DeepSeek）** 与 **素纸** 两种内置外观；在“视图 → 外观主题…”中应用并保存，立即切换。
+- 便携版不载入其他自定义皮肤；本机已有主题文件保持原样。首次默认大肥鱼。
+- 分析工作区与滤波调试使用页签导航，改进空闲暂离时的会话保留、只读保护及诊断中文显示。
+- 保留 Word 图片报告及既有分析、图片/数据导出功能。
+
 ## MATLAB 是否必需？
 
 **不必需。** 普通分析与 Python 图片导出无需 MATLAB。
@@ -66,7 +73,7 @@ MATLAB 原生绘图是可选后端，需要自行安装并授权 MATLAB，再在
 在 PowerShell 中运行（将路径换成你的 ZIP 路径）：
 
 ```powershell
-Get-FileHash -LiteralPath 'VibrationSnap-v0.0.1-beta.2-windows-x64.zip' -Algorithm SHA256
+Get-FileHash -LiteralPath 'VibrationSnap-v0.0.1-beta.3-windows-x64.zip' -Algorithm SHA256
 ```
 
 将结果与同一 Release 的 `SHA256SUMS.txt` 对比，应完全一致。
