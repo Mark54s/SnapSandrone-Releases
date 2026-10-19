@@ -1,21 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="300" viewBox="0 0 1120 300" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
   <title id="title">VibrationSnap</title>
-  <desc id="desc">Offline vibration analysis. A synthetic waveform on a blue grid.</desc>
+  <desc id="desc">An offline vibration analysis toolbox. Blue signal traces meet warm paper, representing the two built-in themes.</desc>
   <defs>
-    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10203d"/><stop offset="1" stop-color="#172d51"/></linearGradient>
-    <linearGradient id="wave"><stop stop-color="#53d9da"/><stop offset="1" stop-color="#80aaff"/></linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#b9d3ff" stroke-opacity=".08"/></pattern>
+    <linearGradient id="navy" x2="1" y2="1"><stop stop-color="#10223f"/><stop offset="1" stop-color="#183b66"/></linearGradient>
+    <linearGradient id="signal" x2="1"><stop stop-color="#5bd8df"/><stop offset="1" stop-color="#85aaff"/></linearGradient>
+    <clipPath id="round"><rect width="1280" height="360" rx="20"/></clipPath>
   </defs>
-  <rect width="1120" height="300" rx="22" fill="url(#bg)"/>
-  <rect x="600" width="520" height="300" rx="22" fill="url(#grid)"/>
-  <circle cx="1030" cy="30" r="170" fill="#4387ff" opacity=".06"/>
-  <text x="62" y="79" fill="#87b7f9" font-family="Segoe UI,Arial,sans-serif" font-size="14" letter-spacing="3">OFFLINE ENGINEERING TOOLBOX</text>
-  <text x="58" y="150" fill="#f5f9ff" font-family="Segoe UI,Arial,sans-serif" font-size="55" font-weight="650">VibrationSnap</text>
-  <text x="62" y="190" fill="#b3c6e1" font-family="Segoe UI,Arial,sans-serif" font-size="20">From signal to insight.</text>
-  <rect x="62" y="224" width="106" height="29" rx="14" fill="#233e61"/>
-  <text x="115" y="244" text-anchor="middle" fill="#d6e6ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Windows x64</text>
-  <rect x="180" y="224" width="86" height="29" rx="14" fill="#233e61"/>
-  <text x="223" y="244" text-anchor="middle" fill="#d6e6ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Portable</text>
-  <path d="M610 154H655L665 143 675 169 685 133 695 178 705 111 715 195 725 140 735 165 745 152H767L777 130 787 180 797 87 807 226 817 68 827 237 837 105 847 197 857 128 867 174 877 146 887 158H907L917 137 927 175 937 107 947 204 957 125 967 182 977 143 987 160H1060" stroke="url(#wave)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="1060" y="269" text-anchor="end" fill="#7895ba" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">IMPORT / ANALYZE / EXPORT</text>
+  <g clip-path="url(#round)">
+    <rect width="1280" height="360" fill="#f4f0e6"/>
+    <path d="M0 0H816L736 360H0Z" fill="url(#navy)"/>
+    <path d="M816 0H828L748 360H736Z" fill="#b69b6b"/>
+    <circle cx="440" cy="-80" r="310" fill="#4a83ca" opacity=".06"/>
+    <text x="60" y="68" fill="#9fbfe6" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="3.2">THE OFFLINE SIGNAL WORKSPACE</text>
+    <text x="55" y="156" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="66" font-weight="700" letter-spacing="-2">VibrationSnap</text>
+    <text x="60" y="202" fill="#ccdaec" font-family="Segoe UI,Arial,sans-serif" font-size="23">Signals, made clear.</text>
+    <path d="M60 235H650" stroke="#466282" stroke-width="1"/>
+    <text x="60" y="274" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1">01</text>
+    <text x="88" y="274" fill="#b2c8e3" font-family="Segoe UI,Arial,sans-serif" font-size="13">IMPORT</text>
+    <text x="240" y="274" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1">02</text>
+    <text x="268" y="274" fill="#b2c8e3" font-family="Segoe UI,Arial,sans-serif" font-size="13">ANALYZE</text>
+    <text x="438" y="274" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1">03</text>
+    <text x="466" y="274" fill="#b2c8e3" font-family="Segoe UI,Arial,sans-serif" font-size="13">EXPORT</text>
+    <text x="60" y="322" fill="#829fbf" font-family="Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.3">LOCAL DATA.  REPRODUCIBLE STEPS.</text>
+    <rect x="844" y="58" width="374" height="226" rx="12" fill="#fffdfa" stroke="#ddd4c3"/>
+    <circle cx="865" cy="78" r="3" fill="#b69b6b"/>
+    <text x="877" y="82" fill="#74654d" font-family="Segoe UI,Arial,sans-serif" font-size="10" letter-spacing="1.5">SIGNAL / FREQUENCY</text>
+    <path d="M866 102H1196" stroke="#ece6da"/>
+    <path d="M866 155H1196" stroke="#dfe7f1"/>
+    <path d="M866 154H883L891 142 899 170 907 125 915 184 923 119 931 186 939 134 947 172 955 146 963 159H983L991 137 999 178 1007 112 1015 195 1023 107 1031 191 1039 129 1047 176 1055 144 1063 161H1083L1091 142 1099 169 1107 125 1115 185 1123 118 1131 185 1139 134 1147 173 1155 145 1163 158H1196" stroke="url(#signal)" fill="none" stroke-width="2.3" stroke-linejoin="round"/>
+    <path d="M866 255H1196" stroke="#d9d1c3"/>
+    <path d="M891 254V247M913 254V243M935 254V233M957 254V212M979 254V234M1001 254V247M1023 254V249M1045 254V245M1067 254V224M1089 254V239M1111 254V247M1133 254V250M1155 254V251M1177 254V252" stroke="#9b7540" stroke-width="8"/>
+    <text x="1216" y="322" text-anchor="end" fill="#897b63" font-family="Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.5">WINDOWS · PORTABLE</text>
+  </g>
 </svg>
