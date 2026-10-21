@@ -47,15 +47,19 @@
 
 ## 快速开始
 
-**当前版本：`v0.0.1-beta.3` · Windows x64 · 早期测试版**
+**当前版本：`v0.0.1-beta.4` · Windows x64 · 早期测试版**
 
-1. **下载。** 获取 [Windows 便携包（ZIP，约 107 MiB）](https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.3/VibrationSnap-v0.0.1-beta.3-windows-x64.zip)。
+1. **下载。** 获取 [Windows 便携包（ZIP，约 107 MiB）](https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.4/VibrationSnap-v0.0.1-beta.4-windows-x64.zip)。
 2. **解压。** 完整解压到有写入权限的文件夹，保留 `VibrationSnap.exe` 旁的 `_internal` 文件夹。
 3. **启动。** 进入 `VibrationSnap` 文件夹，双击 `VibrationSnap.exe`。无需安装 Python。
 4. **分析。** 点击“导入数据…”，将通道拖入中央工作区，选中图卡设置参数，再点“应用并更新”。
 5. **导出。** 从导出菜单选择图片、数据或 Word 图片报告。需要同时查看时域和频域时，为同一通道建两张图卡即可。
 
 > 下载 Release 附件中的 **`VibrationSnap-…-windows-x64.zip`**。GitHub 自动生成的 **Source code (zip / tar.gz)** 只是本下载仓库的文件，不是可运行程序。请先解压，再启动。
+
+## beta.4 新增
+
+实验接线模板与工况例外、Word 模板载入与映射排序、连续点击标峰和测量 CSV 汇总、自动列数与批量图卡尺寸。新工作区默认开启拖动统一大小；首次启动默认大肥鱼主题。
 
 ## 两种外观，同一套分析
 
@@ -95,10 +99,10 @@
 <details>
 <summary><strong>如何核对下载文件？</strong></summary>
 
-从同一版本的 Release 下载 [SHA256SUMS.txt](https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.3/SHA256SUMS.txt)，在 ZIP 所在目录打开 PowerShell，运行：
+从同一版本的 Release 下载 [SHA256SUMS.txt](https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.4/SHA256SUMS.txt)，在 ZIP 所在目录打开 PowerShell，运行：
 
 ```powershell
-Get-FileHash -LiteralPath 'VibrationSnap-v0.0.1-beta.3-windows-x64.zip' -Algorithm SHA256
+Get-FileHash -LiteralPath 'VibrationSnap-v0.0.1-beta.4-windows-x64.zip' -Algorithm SHA256
 ```
 
 将输出与校验文件中的 SHA-256 对比，应完全一致。程序尚未代码签名，Windows 可能提示发布者未知；若安全软件报警，请先核实来源与文件。
