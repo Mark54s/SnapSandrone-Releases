@@ -1,29 +1,29 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="VibrationSnap — 离线振动分析与出图工作区" width="100%">
-</p>
-
-<h3 align="center">从测试通道，到测点、图表和报告。</h3>
-
-<p align="center">
-  为振动测试中的多通道、多工况分析准备的离线桌面工具箱。<br>
-  整理接线、查看信号、标注峰值，把分析结果带进报告。
+  <img src="assets/banner.svg" alt="VibrationSnap：从一段信号，到一份清晰的报告。离线振动分析工作区，合成波形概念图。" width="100%">
 </p>
 
 <p align="center">
-  <strong>Windows x64</strong> &nbsp; · &nbsp; 解压即用 &nbsp; · &nbsp; 无需 Python &nbsp; · &nbsp; 默认离线
+  为多通道、多工况振动测试准备的桌面工具箱。<br>
+  <strong>原始文件只读</strong> &nbsp; · &nbsp; 无需账号 &nbsp; · &nbsp; 默认离线 &nbsp; · &nbsp; 无需 Python
 </p>
 
 <p align="center">
-  <a href="https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.4/VibrationSnap-v0.0.1-beta.4-windows-x64.zip"><strong>下载 Windows 便携版 ↓</strong></a>
-  &nbsp;&nbsp; / &nbsp;&nbsp;
-  <a href="https://github.com/Mark54s/SnapSandrone-Releases/releases/tag/v0.0.1-beta.4">本版更新</a>
-  &nbsp;&nbsp; / &nbsp;&nbsp;
-  <a href="#三步开始">使用方法</a>
-  &nbsp;&nbsp; / &nbsp;&nbsp;
+  <a href="https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.4/VibrationSnap-v0.0.1-beta.4-windows-x64.zip">
+    <img src="assets/download-windows.svg" alt="下载 beta.4 Windows x64 便携包，ZIP 约 107 MiB" width="440">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Mark54s/SnapSandrone-Releases/releases/tag/v0.0.1-beta.4">版本说明</a>
+  &nbsp; / &nbsp;
+  <a href="https://github.com/Mark54s/SnapSandrone-Releases/releases/download/v0.0.1-beta.4/SHA256SUMS.txt">SHA256 校验</a>
+  &nbsp; / &nbsp;
+  <a href="#三步开始">三步开始</a>
+  &nbsp; / &nbsp;
   <a href="https://github.com/Mark54s/SnapSandrone-Releases/issues">反馈问题</a>
 </p>
 
-<p align="center"><sub>v0.0.1-beta.4 · 约 107 MiB · 2026-10-21 · 早期测试版</sub></p>
+<p align="center"><sub>v0.0.1-beta.4 · 2026-10-21 · 早期测试版</sub></p>
 
 ---
 
@@ -37,29 +37,37 @@
 
 <p align="center"><sub>大肥鱼（DeepSeek）主题 · 工作区预览使用合成信号</sub></p>
 
-## beta.4，把重复操作连起来
+## 一次实验，少做几遍重复工作
 
-### 01 &nbsp; 一次整理接线，多组工况沿用
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <img src="assets/feature-wiring.svg" alt="接线示意：板卡通道对应测点及 XYZ 方向" width="100%">
+      <h3>接线一次，工况共用</h3>
+      <p>实验接线模板供多组工况沿用。换线时单独覆盖，需要时恢复继承。</p>
+      <p><sub>板卡通道 → 测点 / XYZ</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <img src="assets/feature-measure.svg" alt="测量示意：在局部波形中标峰并估计周期" width="100%">
+      <h3>连续标峰，集中整理</h3>
+      <p>按预设秒窗找峰，估计附近周期的平均频率，跨卡标注并汇总导出 CSV。</p>
+      <p><sub>局部峰值 · 稳态区间 · 测量表</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <img src="assets/feature-report.svg" alt="报告示意：图表、测点与题注组成 Word 图片报告" width="100%">
+      <h3>排好图，带进报告</h3>
+      <p>自动多列与批量尺寸，按通道、测点或 XYZ 排序，保留工况文字与题注。</p>
+      <p><sub>PNG / PDF / SVG · Word</sub></p>
+    </td>
+  </tr>
+</table>
 
-把板卡通道映射为测点号和 X / Y / Z 方向，保存成**实验接线模板**。同一实验的各工况可以共用，不用逐份重填。
+<p align="center"><sub>beta.4 的三个工作流 · 插画为概念示意，实际界面见上方预览</sub></p>
 
-中途换线或通道故障时，可为某个工况单独设置、停用映射，之后再恢复继承。默认图卡标题与 Word 使用同一份生效映射，原始通道身份仍保留，方便追溯。
+[查看 beta.4 完整更新 →](releases/v0.0.1-beta.4.md)
 
-### 02 &nbsp; 连续点峰，集中整理测量结果
-
-预先设置点击附近的搜索秒窗，单击吸附其中的最高峰，再结合峰附近若干周期估计局部平均频率。也可标记稳态区间，查看振幅、周期等测量结果。
-
-测量模式可以跨图卡连续使用；标好后，将**全部或选中图卡的标记汇总为 CSV**，保留来源、通道和标记身份，便于后续整理。
-
-### 03 &nbsp; 排好图卡，带着测点信息出报告
-
-画布支持自动适应列数、固定多列和自由摆放。新工作区默认开启拖动统一图卡大小，也可关闭，适应不同的排版需求。
-
-Word 报告可按板卡通道、测点号或 XYZ 正倒序整理实际出图顺序。**报告配置和接线模板都能从 Word 载入入口打开**；工况文字、题注与接线各自维护。
-
-[查看完整更新记录 →](releases/v0.0.1-beta.4.md)
-
-## 从导入到交付
+<details>
+<summary><strong>展开完整功能清单 · 从导入到交付</strong></summary>
 
 | 整理数据 | 分析与查看 | 出图与交付 |
 | :--- | :--- | :--- |
@@ -69,6 +77,8 @@ Word 报告可按板卡通道、测点号或 XYZ 正倒序整理实际出图顺�
 | 实验接线模板、工况映射例外 | 峰值 / 稳态标注、坐标与标题设置 | 来源、参数及视图配置保存 |
 
 处理生成派生结果，**原始文件始终只读**。默认离线运行，无需账号，不上传测试数据。
+
+</details>
 
 ## 三步开始
 
@@ -100,7 +110,7 @@ Word 中的「载入配置 / 接线模板…」也能读取接线模板；点击
 
 </details>
 
-## 两种外观，同一套分析
+## 给工作区换个心情
 
 首次启动默认 **大肥鱼（DeepSeek）**，冷白与蓝色；也可选择暖白与棕色的 **素纸**。在「视图 → 外观主题… → 应用并保存」中切换，当前工作区保留，科学图表与报告不随界面主题改变。
 
